@@ -12,12 +12,13 @@ Alive   ← ¬/↥⊂₃⊃(=°⊂|⊃<₀(≥Size)⊂°ℂ)St~Snake
 
 St ℂ⇌⇡₁3 7 ℂ10 7 i [] 0 0
 I~Open +Padding ˙ℂ×Size Scale "snake"
+°I~Window~FPS 60
 
 I~Loop‼Alive(
-  ⍜St~Moves(⊂I~Key~WASD 1)
+  ⍜St~Moves⊂⟜(▽⤚≠I~Key~WASD 1 ¯St~Dir)
 
   ⨬∘(
-    °⊸St~Dir ⊏⊃(=¯)⊟ ⤚⍣⋅⊢∘ ⊸⊃St~Dir St~Moves
+    °⊸St~Dir ⍣⋅⊢∘ ⊸⊃St~Dir St~Moves
     ⍜St~Moves↘₋₁
     ⍜St~Snake(⊂⤚(+⊢))⟜St~Dir
     ⨬⍜St~Snake↘₋₁(
